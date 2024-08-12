@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jsatividade.js"></script>
+</head>
+<body>
+        <script>
+        var a1 = 0;
+        var b2 = 0;
+        var c3 = 0;
+        
+
+        a1 = parseInt(prompt("Digite o valor para o primeiro número: "));
+        b2 = parseInt(prompt("Digite o valor para o segundo número: "));
+        c3 = parseInt(prompt("Digite o valor para o terceiro número: "));
+        
+
+        if (isNaN(a1) || isNaN(b2) || isNaN(c3)){
+
+            alert("Apenas numeros sao aceitos");
+        }
+        else{
+            alert("os numeros em ordem crescente: " + atividade11tres(a1, b2, c3));
+        }
+        </script>
+</body>
+</html>
