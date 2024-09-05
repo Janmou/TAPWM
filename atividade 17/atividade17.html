@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> atividade 17</title>
+    <!---ian moura ra 0031432412012-->
+</head>
+<body>
+    <input type="text" placeholder="escreva algo" id="texto" name="text" onkeydown="return /[a-zA-Z]/i.test(event.key)" title="escreva aqui"><br>
+
+    <input type="checkbox" id="check1" name="check1" value="Deixar em maiúsculo">
+    <label for="check1"> Deixar em maiúsculo </label>
+    <input type="checkbox" id="check2" name="check2" value="Deixar em minúsculo">
+    <label for="check2"> Deixar em minúsculo </label><br>
+    <script>
+        const checkBox = document.getElementById("check1");
+        const caixatxt = document.getElementById("texto");
+        const checkBox1 = document.getElementById("check2");
+        function maiusculo(){
+
+          let text = caixatxt.value;
+            if(checkBox.checked){
+               text = text.toUpperCase();
+            } else if(checkBox1.checked){
+                text = text.toLowerCase();
+            }
+  caixatxt.value = text;
+        }
+
+        checkBox.addEventListener('change', maiusculo);
+        caixatxt.addEventListener('input', maiusculo);
+        checkBox1.addEventListener('change', maiusculo);
+
+    </script> 
+     
+</body>
+
+</html>
